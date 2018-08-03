@@ -40,10 +40,11 @@ export default {
     display:flex
     background: pink
   .nav-left-logo
+    margin:0 10px
     width:50px
     height:50px
     border-radius:25px
-    background:pink
+    background:green
   .login,.register
     width:70px
     height:30px
