@@ -14,8 +14,8 @@
         </ul>
       </div>
       <div class="nav-right">
-        <button class="login">登录</button>
-        <button class="register">注册</button>
+        <div class="login">登录</div>
+        <div class="register">注册</div>
       </div>
     </div>
 </template>
@@ -28,6 +28,7 @@ export default {
 
 <style scoped lang="stylus">
 .nav
+  padding:0
   width:1800px
   height:50px
   background:pink
@@ -46,12 +47,19 @@ export default {
     border-radius:25px
     background:green
   .login,.register
+    display:inline-block
     width:70px
     height:30px
+    line-height:30px
     border-radius:5px
-    background :pink
+    text-align:center
+    background :orange
     color:#fff
   .nav-content ul li
     margin-left:40px
     line-height :50px
+  .nav-right
+   height:80px
+   line-height:80px
+   paddding:0
 </style>
