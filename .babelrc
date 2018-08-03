@@ -10,4 +10,3 @@
   ],
   "plugins": ["transform-vue-jsx", "transform-runtime"]
 }
-// 语法转换
