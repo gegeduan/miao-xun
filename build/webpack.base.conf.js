@@ -1,4 +1,5 @@
 'use strict'
+// build文件放置webpack的打包配置文件,即webpack的不同环境下的配置项
 const path = require('path')
 const utils = require('./utils')
 const config = require('../config')

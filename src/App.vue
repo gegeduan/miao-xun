@@ -1,4 +1,5 @@
 <template>
+  <!--app.vue放置项目最原始的根组件-->
   <div id="app">
     <img src="./assets/logo.png">
     <router-view/>

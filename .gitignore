@@ -12,3 +12,4 @@ yarn-error.log*
 *.ntvs*
 *.njsproj
 *.sln
+ // 特殊不需要提交到线上仓库的文件

@@ -1,7 +1,8 @@
 'use strict'
 // Template version: 1.3.1
 // see http://vuejs-templates.github.io/webpack for documentation.
-
+// config 文件放置项目的配置文件.基础的信息防在index.js文件中
+//
 const path = require('path')
 
 module.exports = {
