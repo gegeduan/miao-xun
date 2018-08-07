@@ -1,12 +1,16 @@
 <template>
+  <div class="header">
     <div class="nav">
       <div class="nav-left">
         <div class="nav-left-logo"></div>
-        <img class="nav-left-img">
+        <div class="nav-left-title">
+            <h3 class="title-top">公益猫</h3>
+            <p class="title-bottom">每只猫都值得被爱.为ta寻找港湾</p>
+        </div>
       </div>
-      <div class="nav-content">
+      <div class="nav-list">
         <ul>
-          <li>首页</li>
+          <li class="nav-list-first">首页</li>
           <li>社区</li>
           <li>日记</li>
           <li>发布</li>
@@ -18,6 +22,8 @@
         <div class="register">注册</div>
       </div>
     </div>
+    <div class="banner"></div>
+  </div>
 </template>
 
 <script>
@@ -27,39 +33,25 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-.nav
-  padding:0
-  width:1800px
-  height:50px
-  background:pink
-  display:flex
-  .nav-content
-    padding:0 30px
-    width:50%
-    line-height 50px
-  .nav-content ul
-    display:flex
-    background: pink
-  .nav-left-logo
-    margin:0 10px
-    width:50px
-    height:50px
-    border-radius:25px
-    background:green
-  .login,.register
-    display:inline-block
-    width:70px
-    height:30px
-    line-height:30px
-    border-radius:5px
-    text-align:center
-    background :orange
-    color:#fff
-  .nav-content ul li
-    margin-left:40px
-    line-height :50px
-  .nav-right
-   height:80px
-   line-height:80px
-   paddding:0
+  .header
+    width:100%
+    height:380px
+    background:lightpink
+    .nav
+      width: 100%
+      height:80px
+      padding:5px 300px
+      background:green
+      .nav-left
+       display:inline-block
+       width:240px
+       background:red
+       .nav-left-logo
+        width:50px
+        height:50px
+        border-radius:25px
+        background:orange
+      .nav-left-title
+       float:right
+       background:yellow
 </style>
