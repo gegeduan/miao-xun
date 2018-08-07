@@ -34,7 +34,7 @@ export default {
 
 <style scoped lang="stylus">
   .header
-    width:100%
+    width:1920px
     height:380px
     background:lightpink
     .nav
