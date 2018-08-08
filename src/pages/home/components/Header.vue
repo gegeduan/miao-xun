@@ -2,15 +2,11 @@
   <div class="header">
     <div class="nav">
       <div class="nav-left">
-        <div class="nav-left-logo"></div>
-        <div class="nav-left-title">
-            <h3 class="title-top">公益猫</h3>
-            <p class="title-bottom">每只猫都值得被爱.为ta寻找港湾</p>
-        </div>
+        <img src="@/imgs/logo.png">
       </div>
       <div class="nav-list">
         <ul>
-          <li class="nav-list-first">首页</li>
+          <li class="homepage">首页</li>
           <li>社区</li>
           <li>日记</li>
           <li>发布</li>
@@ -24,12 +20,11 @@
     </div>
     <div class="banner">
       <div class="find">
-        <div class="find-icon">此处是一张喇叭图片</div>
-        <div class="find-img">报告组织,发现喵星人的足迹!!!</div>
+        <img src="@/imgs/find.png">
       </div>
       <div class="publish">
-        <div class="publish-button">发布喵星人</div>
-        <div class="publish-img">此处一张喵星人合影</div>
+        <img src="@/imgs/publish.png">
+        <img class="publish-img" src="@/imgs/publish1.png">
       </div>
     </div>
   </div>
@@ -45,77 +40,47 @@ export default {
   .header
     width:1920px
     height:380px
-    background:lightpink
-    .nav
-      width: 100%
-      height:80px
-      padding:5px 200px
-    .nav-left
-     display:inline-block
-     width:240px
-     .nav-left-logo
-      margin:10px 5px
-      display:inline-block
-      width:50px
-      height:50px
-      border-radius:25px
-      background:orange
-    .nav-left-title
-     position:relative
-     top:20px
-     left:0
-     right:160px
-     bottom:0
-     color:orange
-     display:inline-block
-     float:right
-    .nav-list
-     margin-left:30px
-     position:relative
-     top:-30px
-     right:0
-     left:0
-     bottom:0
-     height:80px
-     display:inline-block
-     .nav-list-first
+    background:#fcd8d8
+   .nav
+     width:1280px
+     height:50px
+     margin:0 auto
+     display:flex
+     .nav-list ul
+      display:flex
+      margin-left:30px
+     .nav-list ul li
+      padding:0 20px
+      text-align:center
+      line-height:50px
+      font-size:20px
+     .homepage
        color: #ffffff
-       background:orange
-    .nav-list ul
-      height:80px
-      display :flex
-    .nav-list ul li
-     font-size:16px
-     padding:0 40px
-     line-height:60px
-  .nav-right
-    margin-left:40px
-    position:relative
-    top:-30px
-    right:0
-    left:0
-    bottom:0
-    height:80px
-    display:inline-block
-    padding:0 10px
-   .login ,.register
-    margin:5px 20px
-    width:70px
-    height:25px
-    display:inline-block
-    color:#fff
-    border-radius:5px
-    line-height:25px
-    text-align:center
-    background:orange
-   .banner
-    width:100%
-    height:300px
-    padding:5px 200px
-    background:green
-  .find-icon
-    width:70px
-    height:70px
-    text-align:center
-    background:#eee
+       background:#fc8d59
+   .nav-right
+     display:flex
+     margin:10px 0 10px 460px
+     line-height:50px
+     .login,.register
+      margin-left:15px
+      width:50px
+      height:30px
+      border-radius:10px
+      line-height:30px
+      font-size:14px
+      color:#fff
+      text-align:center
+      background:#fc8d59
+  .banner
+    width:1280px
+    padding-top:55px
+    margin:0 auto
+   .find
+    margin-left:135px
+   .publish
+    margin-top:5px
+    margin-left:340px
+    .publish-img
+     display:inline-block
+     margin-top:40px
 </style>
