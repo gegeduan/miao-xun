@@ -80,9 +80,9 @@ export default {
    .publish
     margin-top:5px
     margin-left:340px
-   .publish-img
+   .publish-img1
      display:inline-block
-     margin-bottom:35px
+     padding-bottom:35px
     .publish-img
      display:inline-block
      margin-top:40px
