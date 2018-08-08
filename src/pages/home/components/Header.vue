@@ -23,7 +23,7 @@
         <img src="@/imgs/find.png">
       </div>
       <div class="publish">
-        <img src="@/imgs/publish.png">
+        <img  class="publish-img1" src="@/imgs/publish.png">
         <img class="publish-img" src="@/imgs/publish1.png">
       </div>
     </div>
@@ -80,6 +80,9 @@ export default {
    .publish
     margin-top:5px
     margin-left:340px
+   .publish-img
+     display:inline-block
+     margin-bottom:35px
     .publish-img
      display:inline-block
      margin-top:40px
