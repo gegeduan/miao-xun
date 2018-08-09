@@ -7,6 +7,7 @@ import App from './App'
 import router from './router'
 // 引入css初始化文件
 import './assets/styles/resetpc.css'
+import './assets/styles/iconfont.css'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
