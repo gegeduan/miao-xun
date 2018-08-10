@@ -33,9 +33,9 @@
             </div>
           </div>
         <div class="content-list">
-          <div class="content-item">
+          <div class="content-item" v-for="(item, index) of list" :key="index">
           <div class="item-top">
-            <img src="@/imgs/10.jpg">
+            <img :src="item.imgUrl">
             <span class=" iconfont collect">&#xe703;</span>
           </div>
           <div class="item-bottom">
@@ -45,145 +45,31 @@
             <span class="iconfont criticism">&#xe640;</span>
           </div>
         </div>
-          <div class="content-item">
-            <div class="item-top">
-              <img src="@/imgs/10.jpg">
-              <span class=" iconfont collect">&#xe703;</span>
-            </div>
-            <div class="item-bottom">
-              <div class="avatar"></div>
-              <span class="nick-name">昵称</span>
-              <span class="iconfont praise">&#xe600;</span>
-              <span class="iconfont criticism">&#xe640;</span>
-            </div>
-          </div>
-          <div class="content-item">
-            <div class="item-top">
-              <img src="@/imgs/10.jpg">
-              <span class=" iconfont collect">&#xe703;</span>
-            </div>
-            <div class="item-bottom">
-              <div class="avatar"></div>
-              <span class="nick-name">昵称</span>
-              <span class="iconfont praise">&#xe600;</span>
-              <span class="iconfont criticism">&#xe640;</span>
-            </div>
-          </div>
-          <div class="content-item">
-            <div class="item-top">
-              <img src="@/imgs/10.jpg">
-              <span class=" iconfont collect">&#xe703;</span>
-            </div>
-            <div class="item-bottom">
-              <div class="avatar"></div>
-              <span class="nick-name">昵称</span>
-              <span class="iconfont praise">&#xe600;</span>
-              <span class="iconfont criticism">&#xe640;</span>
-            </div>
-          </div>
-          <div class="content-item">
-            <div class="item-top">
-              <img src="@/imgs/10.jpg">
-              <span class=" iconfont collect">&#xe703;</span>
-            </div>
-            <div class="item-bottom">
-              <div class="avatar"></div>
-              <span class="nick-name">昵称</span>
-              <span class="iconfont praise">&#xe600;</span>
-              <span class="iconfont criticism">&#xe640;</span>
-            </div>
-          </div>
-          <div class="content-item">
-            <div class="item-top">
-              <img src="@/imgs/10.jpg">
-              <span class=" iconfont collect">&#xe703;</span>
-            </div>
-            <div class="item-bottom">
-              <div class="avatar"></div>
-              <span class="nick-name">昵称</span>
-              <span class="iconfont praise">&#xe600;</span>
-              <span class="iconfont criticism">&#xe640;</span>
-            </div>
-          </div>
-          <div class="content-item">
-            <div class="item-top">
-              <img src="@/imgs/10.jpg">
-              <span class=" iconfont collect">&#xe703;</span>
-            </div>
-            <div class="item-bottom">
-              <div class="avatar"></div>
-              <span class="nick-name">昵称</span>
-              <span class="iconfont praise">&#xe600;</span>
-              <span class="iconfont criticism">&#xe640;</span>
-            </div>
-          </div>
-          <div class="content-item">
-            <div class="item-top">
-              <img src="@/imgs/10.jpg">
-              <span class=" iconfont collect">&#xe703;</span>
-            </div>
-            <div class="item-bottom">
-              <div class="avatar"></div>
-              <span class="nick-name">昵称</span>
-              <span class="iconfont praise">&#xe600;</span>
-              <span class="iconfont criticism">&#xe640;</span>
-            </div>
-          </div>
-          <div class="content-item">
-            <div class="item-top">
-              <img src="@/imgs/10.jpg">
-              <span class=" iconfont collect">&#xe703;</span>
-            </div>
-            <div class="item-bottom">
-              <div class="avatar"></div>
-              <span class="nick-name">昵称</span>
-              <span class="iconfont praise">&#xe600;</span>
-              <span class="iconfont criticism">&#xe640;</span>
-            </div>
-          </div>
-          <div class="content-item">
-            <div class="item-top">
-              <img src="@/imgs/10.jpg">
-              <span class=" iconfont collect">&#xe703;</span>
-            </div>
-            <div class="item-bottom">
-              <div class="avatar"></div>
-              <span class="nick-name">昵称</span>
-              <span class="iconfont praise">&#xe600;</span>
-              <span class="iconfont criticism">&#xe640;</span>
-            </div>
-          </div>
-          <div class="content-item">
-            <div class="item-top">
-              <img src="@/imgs/10.jpg">
-              <span class=" iconfont collect">&#xe703;</span>
-            </div>
-            <div class="item-bottom">
-              <div class="avatar"></div>
-              <span class="nick-name">昵称</span>
-              <span class="iconfont praise">&#xe600;</span>
-              <span class="iconfont criticism">&#xe640;</span>
-            </div>
-          </div>
-          <div class="content-item">
-            <div class="item-top">
-              <img src="@/imgs/10.jpg">
-              <span class=" iconfont collect">&#xe703;</span>
-            </div>
-            <div class="item-bottom">
-              <div class="avatar"></div>
-              <span class="nick-name">昵称</span>
-              <span class="iconfont praise">&#xe600;</span>
-              <span class="iconfont criticism">&#xe640;</span>
-            </div>
-          </div>
         </div>
       </div>
   </div>
 </template>
 <script>
 export default {
-  name: 'HomeContent'
+  name: 'HomeContent',
+  data () {
+    return {
+      list: [
+        {imgUrl: '@/imgs/10.jpg '},
+        {imgUrl: '@/imgs/10.jpg '},
+        {imgUrl: '@/imgs/10.jpg '},
+        {imgUrl: '@/imgs/10.jpg '},
+        {imgUrl: '@/imgs/10.jpg '},
+        {imgUrl: '@/imgs/10.jpg '},
+        {imgUrl: '@/imgs/10.jpg '},
+        {imgUrl: '@/imgs/10.jpg '},
+        {imgUrl: '@/imgs/10.jpg '},
+        {imgUrl: '@/imgs/10.jpg '},
+        {imgUrl: '@/imgs/10.jpg '},
+        {imgUrl: '@/imgs/10.jpg '}
+      ]
+    }
+  }
 }
 </script>
 

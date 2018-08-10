@@ -65,6 +65,7 @@ export default {
        color:#fff
        .footer-right-box
          border-left:2px solid #ccc
+         margin-top:10px
          margin-left:50px
          padding-left:10px
         .footer-right-box h3
