@@ -13,9 +13,15 @@
           <li>我的</li>
         </ul>
       </div>
-      <div class="nav-right">
+      <div class="nav-right" v-show="!show">
         <div class="login">登录</div>
         <div class="register">注册</div>
+      </div>
+      <div class="nav-right-active" v-show="show">
+        <div class="avatar"></div>
+        <span class="name">Susie</span>
+        <span class="iconfont icon">&#xe63b;</span>
+        <span class="info-number">17</span>
       </div>
     </div>
     <div class="banner">
@@ -32,11 +38,17 @@
 
 <script>
 export default {
-  name: 'HomeHeader'
+  name: 'HomeHeader',
+  data () {
+    return {
+      show: true
+    }
+  }
 }
 </script>
 
 <style scoped lang="stylus">
+  @import'~styles/varibles.styl'
   .header
     width:1920px
     height:380px
@@ -56,21 +68,56 @@ export default {
       font-size:20px
      .homepage
        color: #ffffff
-       background:#fc8d59
+       background:$bgColor
    .nav-right
      display:flex
      margin:10px 0 10px 460px
      line-height:50px
-     .login,.register
-      margin-left:15px
-      width:50px
+   .nav-right-active
+     position:relative
+     dispaly:flex
+     font-size:14px
+     color:#666
+     margin:10px 0 10px 400px
+     .avatar
+      display:inline-block
+      width:30px
       height:30px
-      border-radius:10px
-      line-height:30px
-      font-size:14px
-      color:#fff
+      border-radius:15px
+      background:#4575b4
+     .name
+      position:relative
+      left:3px
+      bottom:8px
+      display:inline-block
+     .info-number
+      position:relative
+      right:43px
+      bottom:15px
+      display:inline-block
+      width:30px
+      height:20px
+      font-size:10px
       text-align:center
+      color: #fff
       background:#fc8d59
+     .icon
+      position:relative
+      display:inline-block
+      font-size:25px
+      right:8px
+      bottom:5px
+      color:#ccc
+   .login,.register
+    margin-left:15px
+    width:50px
+    height:30px
+    border-radius:10px
+    line-height:30px
+    font-size:14px
+    color:#fff
+    text-align:center
+    background:#fc8d59
   .banner
     width:1280px
     padding-top:55px

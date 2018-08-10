@@ -26,7 +26,7 @@
 
 <script>
 export default {
-  name: 'HomeFooter'
+  name: 'CommonFooter'
 }
 </script>
 
@@ -56,13 +56,17 @@ export default {
       color:#fff
       padding-left:60px
       .box
-       margin:10px auto
+       border-left:2px solid #ccc
+       padding-left:10px
+       margin:10px 0
        .copy
         margin-top:80px
      .footer-right
        color:#fff
        .footer-right-box
-         margin-left:60px
+         border-left:2px solid #ccc
+         margin-left:50px
+         padding-left:10px
         .footer-right-box h3
          padding-left:20px
         .weixin

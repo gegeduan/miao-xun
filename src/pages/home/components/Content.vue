@@ -17,7 +17,7 @@
             </div>
             </div>
             <div class="content-navigater-middle">
-              <label class="age">年龄段 <input type="text"></label>
+              <label class="age">年龄段 <input type="number"></label>
               <div class="health">
                 <span>健康状况 </span>
                 <input type="radio" name="health"> 健康
@@ -228,6 +228,7 @@ export default {
        .city input,.age input
         width:150px
         height:30px
+        text-align:center
         border:1px solid #91bfdb
         border-radius:10px
        .city,.sex span,.age,.health span
@@ -242,6 +243,7 @@ export default {
         width:20px
         height:20px
         margin-left:15px
+        text-align:center
         border-radius:5px
       .reset,.search
        width:50px

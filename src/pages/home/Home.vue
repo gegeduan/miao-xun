@@ -2,23 +2,23 @@
   <div>
     <home-header></home-header>
     <home-content></home-content>
-    <home-footer></home-footer>
+    <common-footer></common-footer>
   </div>
 </template>
 <script>
 import HomeHeader from './components/Header'
 import HomeContent from './components/Content'
-import HomeFooter from './components/Footer'
+import CommonFooter from '@/common/Footer'
 export default {
   name: 'Home',
   components: {
     HomeHeader,
     HomeContent,
-    HomeFooter
+    CommonFooter
   }
 }
 </script>
 
-<style scoped >
+<style scoped lang="stylus">
 
 </style>
