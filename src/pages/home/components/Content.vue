@@ -116,7 +116,7 @@ export default {
         height:30px
         text-align:center
         border:1px solid #91bfdb
-        border-radius:10px
+        border-radius:5px
        .city,.sex span,.age,.health span
         font-size:16px
         color:#666
@@ -126,11 +126,16 @@ export default {
         font-size:14px
         color:#aeaeae
        .health input,.sex input
-        width:20px
-        height:20px
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        appearance: none;
+        background-color:#e0f3f8;
+        outline: 0 !important;
+        border-radius:3px
         margin-left:15px
-        text-align:center
-        border-radius:5px
+      .health input:checked,.sex input:checked
+        background-color:cornflowerblue;
       .reset,.search
        width:50px
        line-height:30px
@@ -153,6 +158,7 @@ export default {
        overflow:hidden
        padding:5px
        .item-top
+        overflow:hidden
         position:relative
         width:278px
         height:324px
