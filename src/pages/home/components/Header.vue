@@ -7,7 +7,12 @@
       <div class="nav-list">
         <ul>
           <li class="homepage">首页</li>
-          <li>社区</li>
+          <router-link
+            tag="li"
+            to="/community"
+          >
+            社区
+          </router-link>
           <li>日记</li>
           <li>发布</li>
           <li>我的</li>
@@ -62,6 +67,7 @@ export default {
       display:flex
       margin-left:30px
      .nav-list ul li
+      cursor:default
       padding:0 20px
       text-align:center
       line-height:50px
