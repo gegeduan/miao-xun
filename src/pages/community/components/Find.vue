@@ -59,4 +59,6 @@ export default {
        background:#fc8d59
   .find-right
    margin-left:675px
+  .find-left
+   padding-left:40px
 </style>
