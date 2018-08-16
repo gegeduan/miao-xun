@@ -16,7 +16,9 @@
               </p>
                 <p class="detail-btn">查看全文</p>
             </div>
-              <div class="picture"></div>
+              <div class="picture">
+               <img class="pic-img" src="@/imgs/cat.png"/>
+                </div>
           </div>
             <div class=" apply">申请成为它的主人</div>
             <ul>
@@ -28,12 +30,16 @@
           </div>
          <div class="show-comment" v-show="!show">
            <div class="comment-box">
-             <div class="avatar"></div>
+             <div class="avatar">
+               <img class="avatar-img" src="@/imgs/avatar.png">
+             </div>
              <input type="text" placeholder="说点什么...">
              <div class="comment-btn">评论</div>
            </div>
            <div class="comment-boxs" >
-             <div class="avatar"></div>
+             <div class="avatar">
+               <img class="avatar-img" src="@/imgs/avatar.png">
+             </div>
              <div class="comment-content">
                <div class="nickName">不将就的皮皮猫:</div>
                <p class="comment-text">床前明月光,疑是地上霜.举头望明月,低头思故乡.</p>
@@ -94,7 +100,7 @@ export default {
       width:715px
       text-indent:22px
       font-size:14px
-      color: #999999
+      color: #666
    .box
      position:relative
      .detail-btn
@@ -112,6 +118,9 @@ export default {
       margin-left:52px
       border-radius:5px
       background:cornflowerblue
+      .pic-img
+       width;100%
+       height:100%
    .apply
      width:180px
      height:40px
@@ -154,6 +163,9 @@ export default {
      height:30px
      border-radius:15px
      background:cornflowerblue
+   .avatar-img
+     width: 100%
+     height:100%
   .comment-box input
    padding-left:5px
    color:#ccc
