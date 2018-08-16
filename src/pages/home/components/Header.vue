@@ -55,7 +55,7 @@ export default {
 <style scoped lang="stylus">
   @import'~styles/varibles.styl'
   .header
-    width:1920px
+    width:100%
     height:380px
     background:#fcd8d8
    .nav

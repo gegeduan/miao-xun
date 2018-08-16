@@ -62,7 +62,8 @@ export default {
      margin-left:95px
    .city,.age,.sex span,.health span
      font-size:20px
-     color:#7498c7
+     font-weight:bold
+     color:#4575b4
    .sex label,.health label
      font-size:14px
      color:#a2bad9
@@ -97,6 +98,7 @@ export default {
      margin-bottom:10px
      width:50px
      height:30px
+     line-height:30px
      border-radius:5px
      font-size:14px
      color:#e1645d

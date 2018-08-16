@@ -111,7 +111,7 @@ export default {
 
 <style scoped lang="stylus">
   .content-wapper
-    width:1920px
+    width:100%
     .content
      width:1280px
      margin:0 auto
